@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+.slider {
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: 100vh;
+    animation: zoom 3s linear infinite;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.2);
+    }
+    15% {
+        transform: scale(1);
+    }
+    85% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    position: absolute;
+    top: 0;
+}
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 40px;
+    color: #fff;
+}
+
+.navbarlogo img{
+    width: 300px;
+}
+
+.navbarmenu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbarmenu-item {
+    padding: 10px 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.navbarmenu-item:hover{
+    background-color: #fe7250;
+    cursor: pointer;
+}
+
+.login-form {
+    width: 60%;
+    margin: 160px auto 0;
+    text-align: center;
+    color: #fff;
+}
+
+.login-form p{
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.login-form h4 {
+    width: 60%;
+    margin: 20px auto 100px;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 1.3rem;
+}
+
+.login-form button {
+    width: 200px;
+    border-radius: 25px;
+    padding: 15px 0;
+    margin: 0 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #fe7250;
+    background-color: #fe7250;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: background 0.5s;
+}
+
+.login-form button:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.login-form .btn-2 {
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+
+.login-form .btn-2:hover {
+    border: 2px solid #fe7250;
+    background-color: #fe7250;
+}
+
+/*---------------------------------------*/
+.content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.content_about{
+    display: block;
+    width: 33.33%;
+    padding: 16px 8px;
+}
+.content .img_content{
+    width: 100%;
+}
