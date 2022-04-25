@@ -16,10 +16,10 @@
         <div class="overlay">
             <div class="navbar">
                 <div class="navbarlogo">
-                    <img src="./assets/img/log.png" alt="">
+                    <!--<img src="./assets/img/log.png" alt="">-->
                 </div>
                 <div class="navbarmenu">
-                    <h4 class="navbarmenu-item">Booking</h4>
+                    <h4 class="navbarmenu-item ">Booking</h4>
                     <h4 class="navbarmenu-item">Review</h4>
                     <h4 class="navbarmenu-item">Travel Map</h4>
                     <h4 class="navbarmenu-item">Blog</h4>
@@ -99,3 +99,25 @@
 </body>
 
 </html>
+
+<script> 
+// Tạo ra các hàm tùy chỉnh
+function hamDauTien() {
+    alert("Hàm đầu tiên thực thi thành công!");
+}
+ 
+function hamThuHai() {
+    alert("Hàm thứ hai thực thi thành công!");
+}
+ 
+// Nhắm đến phần tử myBtn
+var btn = document.querySelector('.btn-1');
+// Gán Event Listener cho phần tử button
+ btn.addEventListener("click",hamDauTien);
+
+
+ document.querySelector('.btn-2').onclick = function(){
+    alert("hello world");
+ }
+
+</script>
